@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>12A10 — Săn Giải Nhất Hội Trăng Rằm 2026 | Đèn Kéo Quân + Bánh Trung Thu</title>
+<meta name="description" content="Web idea tổng: concept đèn kéo quân Trăng Chi Lăng và bộ bánh Tứ Quý Trăng Rằm — chiến lược 200 điểm cho lớp 12A10, THPT Chi Lăng.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#0e1533; --night2:#1a2452; --night3:#252f66;
+  --paper:#fff7e8; --paper2:#fdeed3; --card:#fffdf6;
+  --gold:#f2b705; --gold-soft:#ffd166; --gold-deep:#b97f00;
+  --red:#c1272d; --red-deep:#8e1b20;
+  --jade:#1f8a70; --ink:#2b2118; --muted:#7a6a58;
+  --line:#e9d9b8; --shadow:0 18px 50px -18px rgba(14,21,51,.45);
+  --r:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Be Vietnam Pro',system-ui,sans-serif;background:var(--night);color:var(--paper);line-height:1.65}
+h1,h2,h3,.display{font-family:'Playfair Display',serif;line-height:1.2}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+/* NAV */
+nav{position:sticky;top:0;z-index:50;background:rgba(14,21,51,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(242,183,5,.25)}
+.nav-in{display:flex;align-items:center;gap:14px;padding:12px 22px;max-width:1120px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.3px}
+.brand .moon{width:34px;height:34px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#ffe9a8,var(--gold) 60%,#c98a00);box-shadow:0 0 18px 4px rgba(242,183,5,.55)}
+.brand small{display:block;font-weight:500;color:var(--gold-soft);font-size:11px;letter-spacing:1.5px;text-transform:uppercase}
+.links{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap}
+.links a{text-decoration:none;font-size:13.5px;font-weight:600;padding:8px 12px;border-radius:999px;color:#ffe9bd}
+.links a:hover,.links a.active{background:rgba(242,183,5,.16);color:#fff}
+/* HERO */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(1100px 500px at 85% -80px,rgba(242,183,5,.35),transparent 60%),
+  radial-gradient(700px 420px at 8% 10%,rgba(193,39,45,.35),transparent 60%),
+  linear-gradient(180deg,var(--night2),var(--night));}
+.stars{position:absolute;inset:0;pointer-events:none;opacity:.8;
+  background-image:radial-gradient(1.6px 1.6px at 12% 22%,#fff,transparent),radial-gradient(1.3px 1.3px at 28% 12%,#fff,transparent),radial-gradient(1.8px 1.8px at 44% 30%,#ffe9a8,transparent),radial-gradient(1.2px 1.2px at 63% 14%,#fff,transparent),radial-gradient(1.6px 1.6px at 76% 28%,#fff,transparent),radial-gradient(1.4px 1.4px at 90% 18%,#ffe9a8,transparent),radial-gradient(1.2px 1.2px at 8% 55%,#fff,transparent),radial-gradient(1.5px 1.5px at 95% 55%,#fff,transparent),radial-gradient(1.3px 1.3px at 55% 8%,#fff,transparent)}
+.hero-in{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:34px;padding:64px 0 54px;align-items:center}
+.kicker{display:inline-flex;align-items:center;gap:8px;background:rgba(242,183,5,.14);border:1px solid rgba(242,183,5,.45);color:#ffe3a1;font-size:12.5px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;padding:8px 14px;border-radius:999px}
+.hero h1{font-size:clamp(34px,5vw,58px);margin:18px 0 10px;color:#fff}
+.hero h1 em{color:var(--gold-soft);font-style:italic}
+.lead{color:#f3e4c3;font-size:16.5px;max-width:56ch}
+.badges{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}
+.badge{background:rgba(255,253,246,.08);border:1px solid rgba(255,209,102,.4);padding:10px 14px;border-radius:14px;font-size:13.5px}
+.badge b{display:block;font-size:20px;color:var(--gold-soft)}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:14.5px;padding:13px 20px;border-radius:999px;transition:.2s;cursor:pointer;border:1px solid transparent}
+.btn-gold{background:linear-gradient(180deg,var(--gold-soft),var(--gold));color:#3a2a00;box-shadow:0 12px 30px -10px rgba(242,183,5,.7)}
+.btn-gold:hover{transform:translateY(-2px)}
+.btn-ghost{border-color:rgba(255,233,189,.5);color:#ffedbe}
+.btn-ghost:hover{background:rgba(255,233,189,.12)}
+/* lantern visual */
+.lantern-stage{position:relative;display:flex;justify-content:center;padding:10px 0 0}
+.lantern{width:230px;filter:drop-shadow(0 24px 40px rgba(242,183,5,.35));animation:sway 5.2s ease-in-out infinite}
+@keyframes sway{0%,100%{transform:rotate(-2.4deg)}50%{transform:rotate(2.4deg)}}
+.moon-big{position:absolute;top:-24px;right:6%;width:120px;height:120px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff3cf,var(--gold-soft) 55%,#d99a00);box-shadow:0 0 60px 18px rgba(242,183,5,.35)}
+/* SECTIONS on paper */
+section.block{background:var(--paper);color:var(--ink)}
+section.block .wrap{padding:56px 22px}
+.eyebrow{color:var(--red);font-weight:800;letter-spacing:2px;font-size:12.5px;text-transform:uppercase}
+h2.sec{font-size:clamp(26px,3.4vw,38px);margin:8px 0 6px;color:#3a2410}
+.sub{color:#6d5b44;max-width:72ch}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px;box-shadow:var(--shadow)}
+.card h3{margin:0 0 8px;font-size:20px;color:#43290e}
+.card p{margin:8px 0;color:#54432e;font-size:14.8px}
+.score-bar{height:10px;background:#f0e2c4;border-radius:99px;overflow:hidden;margin-top:10px}
+.score-bar i{display:block;height:100%;background:linear-gradient(90deg,var(--red),var(--gold));border-radius:99px}
+.tag{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.6px;padding:4px 10px;border-radius:99px;background:#f7e8c8;color:#7a4d00;border:1px solid #e6c87e;margin:2px 4px 2px 0}
+.tag.red{background:#fbe3e3;color:var(--red-deep);border-color:#efb3b3}
+.tag.green{background:#ddf3e9;color:#0d5c46;border-color:#a9dcc6}
+table.score{width:100%;border-collapse:collapse;font-size:14.5px;background:#fff;border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
+table.score th{background:#3a2410;color:#ffe9bd;padding:12px;text-align:left;font-size:13px;letter-spacing:.4px}
+table.score td{border-top:1px solid var(--line);padding:12px;vertical-align:top}
+table.score td.pts{font-weight:800;color:var(--red-deep);white-space:nowrap}
+/* drawings */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}
+.tab{border:1.5px solid #d9c193;background:#fff;color:#5b4326;font-weight:700;font-size:13.5px;padding:9px 16px;border-radius:999px;cursor:pointer}
+.tab.active{background:#3a2410;color:#ffe9bd;border-color:#3a2410}
+.draw{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:18px;box-shadow:var(--shadow)}
+.draw svg{width:100%;height:auto;background:#fffdf4;border:1px dashed #d9c193;border-radius:12px}
+.spec{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:14px}
+.spec div{background:#3a2410;color:#ffe9bd;border-radius:14px;padding:12px 14px}
+.spec b{display:block;font-size:20px;color:var(--gold-soft)}
+.spec span{font-size:12.5px;opacity:.9}
+/* steps */
+.steps{counter-reset:s;margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.steps li{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px 14px 60px;position:relative;font-size:14.6px;color:#4a3a26}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:14px;top:14px;width:32px;height:32px;border-radius:50%;background:var(--red);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
+/* checklist */
+.check{display:grid;gap:10px}
+.check label{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:14.5px;cursor:pointer}
+.check input{width:19px;height:19px;margin-top:3px;accent-color:var(--red)}
+.progress{position:sticky;top:64px;background:#3a2410;color:#ffe9bd;border-radius:14px;padding:12px 16px;font-weight:700;font-size:14px;margin-bottom:14px;z-index:5}
+/* timeline */
+.tl{display:grid;gap:0;margin-top:6px}
+.tl div{display:grid;grid-template-columns:150px 1fr;gap:14px;padding:14px 0;border-left:3px solid var(--gold);padding-left:18px;position:relative}
+.tl div::before{content:"";position:absolute;left:-8px;top:20px;width:13px;height:13px;border-radius:50%;background:var(--red);box-shadow:0 0 0 4px #fbe3e3}
+.tl b{color:#43290e}
+/* estimator */
+.est{background:#0e1533;color:#ffe9bd;border-radius:var(--r);padding:22px}
+.est input,.est select{width:100%;padding:11px 12px;border-radius:10px;border:1px solid #3c4a8f;background:#fff;color:#222;font-size:14.5px;margin-top:6px}
+.est .out{background:rgba(242,183,5,.12);border:1px solid rgba(242,183,5,.5);border-radius:12px;padding:14px;margin-top:12px;font-size:14.5px}
+.est .out b{color:var(--gold-soft);font-size:20px}
+/* cake */
+.cake-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.cake{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+.cake .top{height:120px;display:flex;align-items:center;justify-content:center;font-size:52px}
+.cake .body{padding:14px 16px}
+.cake .body h4{margin:0 0 4px;font-family:'Playfair Display',serif;font-size:17px;color:#43290e}
+.cake .body p{font-size:13.5px;color:#5c4a33;margin:6px 0}
+/* speech */
+.speech{background:#3a2410;color:#ffe9bd;border-radius:var(--r);padding:24px;font-size:15px}
+.speech b{color:var(--gold-soft)}
+footer{background:#0a0f26;color:#cbb98f;padding:34px 0;font-size:13.5px}
+footer a{color:var(--gold-soft)}
+@media(max-width:920px){
+  .hero-in{grid-template-columns:1fr}
+  .grid2,.grid3{grid-template-columns:1fr}
+  .spec{grid-template-columns:1fr 1fr}
+  .cake-grid{grid-template-columns:1fr 1fr}
+  .tl div{grid-template-columns:1fr}
+}
+@media(max-width:560px){.cake-grid{grid-template-columns:1fr}.links{display:none}}
+@media print{
+  nav,.cta-row,.tabs,.est button,.no-print{display:none!important}
+  body{background:#fff;color:#000}
+  section.block .wrap{padding:18px 0}
+  .card,.draw,table.score{box-shadow:none}
+}
+</style>
+</head>
+<body>
+
+<nav><div class="nav-in">
+  <div class="brand"><span class="moon"></span><span>12A10 · HỘI TRĂNG RẰM 2026<small>THPT Chi Lăng — Kế hoạch 09-KH/ĐTN</small></span></div>
+  <div class="links">
+    <a href="#luat">Luật chơi</a><a href="#den">Đèn kéo quân</a><a href="#banve">Bản vẽ</a><a href="#banh">Bánh</a><a href="#kehoach">Kế hoạch</a><a href="#thuyettrinh">Thuyết trình</a>
+  </div>
+</div></nav>
+
+<header class="hero"><div class="stars"></div><div class="wrap hero-in">
+  <div>
+    <span class="kicker">Bản chiến lược săn giải nhất · 200 điểm</span>
+    <h1>Trăng Chi Lăng,<br><em>hào khí xứ Lạng</em> soi đường 12A10</h1>
+    <p class="lead">Một concept đèn kéo quân <b>lục giác kể chuyện 6 mặt</b> không đụng hàng trên mạng + bộ bánh <b>Tứ Quý Trăng Rằm</b> — thiết kế để ăn trọn từng dòng điểm trong phụ lục 2: bản vẽ 40 · thẩm mỹ 10 · sáng tạo 10 · bền vững 10 · vận hành 30 · bánh 50-30-20.</p>
+    <div class="badges">
+      <div class="badge"><b>40 đ</b>Bản vẽ A4 đủ 3 hình chiếu</div>
+      <div class="badge"><b>&lt; 0,5 vòng/giây</b>Quay đều · cùng chiều kim đồng hồ</div>
+      <div class="badge"><b>100 đ</b>Bánh: chất lượng 50 · nghệ thuật 30 · sáng tạo 20</div>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-gold" href="#den">Xem concept đèn →</a>
+      <a class="btn btn-ghost" href="#banh">Xem concept bánh →</a>
+      <a class="btn btn-ghost" href="#kehoach" >Kế hoạch 5 tổ →</a>
+    </div>
+  </div>
+  <div class="lantern-stage">
+    <div class="moon-big"></div>
+    <svg class="lantern" viewBox="0 0 200 300" aria-label="Đèn kéo quân minh hoạ">
+      <line x1="100" y1="0" x2="100" y2="26" stroke="#8a6a2f" stroke-width="3"/>
+      <ellipse cx="100" cy="34" rx="52" ry="10" fill="#8e1b20"/>
+      <path d="M48 40 L152 40 L168 200 L32 200 Z" fill="#ffdf9e" stroke="#8e1b20" stroke-width="4"/>
+      <path d="M48 40 L152 40 L148 70 L52 70 Z" fill="#c1272d"/>
+      <g fill="#8e1b20" opacity=".85">
+        <circle cx="74" cy="120" r="12"/><circle cx="104" cy="140" r="15"/><circle cx="130" cy="116" r="10"/>
+      </g>
+      <g stroke="#8e1b20" stroke-width="2" opacity=".5">
+        <line x1="52" y1="90" x2="148" y2="90"/><line x1="48" y1="120" x2="152" y2="120"/><line x1="44" y1="150" x2="156" y2="150"/><line x1="40" y1="180" x2="160" y2="180"/>
+      </g>
+      <ellipse cx="100" cy="208" rx="60" ry="12" fill="#8e1b20"/>
+      <rect x="92" y="218" width="16" height="26" fill="#f2b705" stroke="#8e1b20" stroke-width="3"/>
+      <polygon points="100,252 90,270 110,270" fill="#ff9d00"/>
+      <line x1="60" y1="216" x2="60" y2="250" stroke="#f2b705" stroke-width="2"/><line x1="140" y1="216" x2="140" y2="250" stroke="#f2b705" stroke-width="2"/>
+      <circle cx="60" cy="254" r="4" fill="#f2b705"/><circle cx="140" cy="254" r="4" fill="#f2b705"/>
+    </svg>
+  </div>
+</div></header>
+
+<!-- LUẬT CHƠI -->
+<section class="block" id="luat"><div class="wrap">
+  <div class="eyebrow">01 · Giải mã phụ lục 2</div>
+  <h2 class="sec">Muốn giải nhất, ăn điểm theo đúng dòng giám khảo cầm bút</h2>
+  <p class="sub">Cuộc thi có 2 bảng 100 điểm. Bảng 1 là <b>đèn lồng kéo quân</b> (bản vẽ 40 + vận hành 30 là 2 mỏ điểm lớn nhất). Bảng 2 là <b>bánh</b> (chất lượng 50 là linh hồn). Mọi ý tưởng dưới đây đều neo vào từng dòng điểm này.</p>
+  <div class="grid2" style="margin-top:18px">
+    <div>
+      <h3 style="font-size:20px;margin:0 0 10px">Bảng 1 — Đèn lồng kéo quân · 100 điểm</h3>
+      <table class="score">
+        <tr><th>Nội dung</th><th>Điểm</th></tr>
+        <tr><td><b>Bản vẽ kỹ thuật:</b> đủ chi tiết, hình chiếu đứng + bằng + cạnh, kích thước, khung, vẽ trên giấy A4</td><td class="pts">40</td></tr>
+        <tr><td>Thẩm mỹ</td><td class="pts">10</td></tr>
+        <tr><td><b>Sáng tạo:</b> độc đáo, không sao chép nguyên sản phẩm trên mạng</td><td class="pts">10</td></tr>
+        <tr><td>Chắc chắn, bền vững, không méo mó rơi rớt chi tiết khi di chuyển, hoạt động</td><td class="pts">10</td></tr>
+        <tr><td><b>Vận hành:</b> quay đều ổn định, tốc độ khung trong <b>&lt; 0,5 vòng/giây</b>, nhìn từ trên xuống <b>cùng chiều kim đồng hồ</b></td><td class="pts">30</td></tr>
+      </table>
+    </div>
+    <div>
+      <h3 style="font-size:20px;margin:0 0 10px">Bảng 2 — Bánh · 100 điểm</h3>
+      <table class="score">
+        <tr><th>Nội dung</th><th>Điểm</th></tr>
+        <tr><td><b>Chất lượng bánh</b> (vỏ, nhân, độ chín, hương vị)</td><td class="pts">50</td></tr>
+        <tr><td>Trang trí và nghệ thuật</td><td class="pts">30</td></tr>
+        <tr><td>Sáng tạo</td><td class="pts">20</td></tr>
+      </table>
+      <div class="card" style="margin-top:14px;border-left:6px solid var(--red)">
+        <h3>Chiến lược 12A10</h3>
+        <p>① Dồn lực vào <b>bản vẽ A4 chuẩn kỹ thuật</b> (40đ) — thứ duy nhất làm trước ở nhà, không rủi ro sân khấu. ② Khoá cứng <b>tốc độ + chiều quay</b> bằng thiết kế cánh và vòng bi (30đ). ③ Bánh đi 2 chân: 2 vị kinh điển giữ điểm chất lượng + 2 vị sáng tạo lấy điểm nghệ thuật.</p>
+        <span class="tag">không copy mạng</span><span class="tag red">quay ≤ 0,35 vòng/giây mục tiêu</span><span class="tag green">A4 tỉ lệ 1:5</span>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<!-- CONCEPT ĐÈN -->
+<section class="block" id="den" style="background:var(--paper2)"><div class="wrap">
+  <div class="eyebrow">02 · Concept đèn — phần hồn của giải nhất</div>
+  <h2 class="sec">“Trăng Chi Lăng” — chiếc đèn lục giác kể chuyện 6 mặt</h2>
+  <p class="sub">Vì tiêu chí sáng tạo cấm sao chép nguyên mẫu trên mạng, lớp mình <b>không làm đèn vuông 4 mặt phổ biến</b> mà làm <b>lăng trụ lục giác 6 mặt</b> — mỗi mặt là một “thước phim” giấy nến kể liền mạch một câu chuyện khi khung trong quay. Khung tre + giấy nến + đế gỗ, chong chóng 12 cánh (12 = khối 12, 10债 nan phụ = 10 — dấu lớp 12A10 ngay trong kết cấu).</p>
+  <div class="grid3" style="margin-top:18px">
+    <div class="card"><h3>6 mặt kể chuyện</h3><p>① Cổng trường THPT Chi Lăng dưới trăng · ② Ải Chi Lăng — hào khí xứ Lạng · ③ Chị Hằng — chú Cuội · ④ Cồng chiêng Tây Nguyên · ⑤ Dã quỳ Gia Lai · ⑥ Logo 12A10 + lời chúc. Thứ tự sắp xếp để khi quay cùng chiều kim đồng hồ, câu chuyện chạy đúng chiều đọc.</p><span class="tag">độc bản</span><span class="tag">kể chuyện liền mạch</span></div>
+    <div class="card"><h3>Vì sao giám khảo thích?</h3><p>Thẩm mỹ: giấy nến vàng — đỏ — chàm, viền hoa văn trống đồng khắc giấy. Sáng tạo: lục giác + chong chóng 12 cánh + mái ngói cong cách điệu. Bền vững: khung tre tam giác hoá, mối buộc kẽm + keo nến, trục inox + vòng bi thép.</p><span class="tag green">chắc chắn</span><span class="tag">văn hoá địa phương</span></div>
+    <div class="card"><h3>Khoá vận hành 30 điểm</h3><p>Mục tiêu <b>0,25–0,35 vòng/giây</b> (dưới trần 0,5). Chong chóng 12 cánh nghiêng 22°, 3 nến tealight đặt tam giác đều, khe thoát nhiệt mái 2 cm, vòng bi 608 + trục Ø3 mm. Chiều quay chỉnh bằng hướng nghiêng cánh — thử và khoá trước giờ thi.</p><span class="tag red">cùng chiều kim đồng hồ</span></div>
+  </div>
+
+  <div class="grid2" style="margin-top:18px">
+    <div class="card">
+      <h3>Thông số chốt (để vẽ A4 tỉ lệ 1:5)</h3>
+      <p>· Tổng cao <b>62 cm</b>: đế gỗ 4 + thân 44 + mái 14 · Lục giác ngoại tiếp <b>Ø36 cm</b> (cạnh 18 cm) · Khung trong Ø26 × cao 30 cm · Chong chóng 12 cánh, bán kính 13 cm, nghiêng 22° · Trục inox Ø3 mm, cao 52 cm · Khoảng cách nến → giấy tối thiểu <b>12 cm</b> · Khối lượng mục tiêu &lt; 1,2 kg.</p>
+      <div class="score-bar"><i style="width:92%"></i></div>
+      <p style="font-size:13px">Vẽ A4: 62 cm → 12,4 cm, vừa khung tên + bảng kê. Đủ hình chiếu đứng, bằng, cạnh + mặt cắt trục quay.</p>
+    </div>
+    <div class="est">
+      <h3 style="margin:0;color:#fff">Máy tính tốc độ quay (ước lượng sân khấu)</h3>
+      <p style="font-size:13.5px;opacity:.85">Kéo thanh trượt theo cấu hình nến + góc cánh để xem tốc độ dự kiến. Mục tiêu nằm trong vùng xanh.</p>
+      <label>Số nến tealight<input id="candles" type="range" min="1" max="4" value="3" oninput="calc()"></label>
+      <label>Góc nghiêng cánh (độ)<input id="angle" type="range" min="12" max="32" value="22" oninput="calc()"></label>
+      <div class="out" id="estOut">—</div>
+      <p style="font-size:12.5px;opacity:.75">Công thức sân khấu: tốc độ ≈ 0,09 × nến × sin(góc) × 1,15 (hệ số chong chóng 12 cánh). Chỉ để tham khảo — chốt bằng bấm giờ thực tế 60 giây.</p>
+    </div>
+  </div>
+</div></section>
+
+<!-- BẢN VẼ -->
+<section class="block" id="banve"><div class="wrap">
+  <div class="eyebrow">03 · Bản vẽ kỹ thuật 40 điểm</div>
+  <h2 class="sec">Bản vẽ A4: đứng — bằng — cạnh, đủ kích thước và khung tên</h2>
+  <p class="sub">Bấm từng tab để xem 3 hình chiếu đúng tỉ lệ 1:5. Khi chép ra giấy A4: khung tên góc phải (tên đề tài, lớp 12A10, tỉ lệ, người vẽ — ký tên), nét thấy đậm, nét khuất mảnh đứt, đường tâm gạch chấm, ghi đủ kích thước cm.</p>
+  <div class="tabs no-print">
+    <button class="tab active" onclick="showTab('dung',this)">Hình chiếu đứng</button>
+    <button class="tab" onclick="showTab('bang',this)">Hình chiếu bằng (nhìn từ trên)</button>
+    <button class="tab" onclick="showTab('canh',this)">Hình chiếu cạnh + mặt cắt trục</button>
+  </div>
+
+  <div class="draw" id="tab-dung">
+    <svg viewBox="0 0 640 420">
+      <text x="20" y="30" font-size="17" font-weight="700" fill="#43290e">HÌNH CHIẾU ĐỨNG — tỉ lệ 1:5 (đơn vị cm, kích thước ghi theo vật thật)</text>
+      <g stroke="#43290e" fill="none" stroke-width="2">
+        <rect x="250" y="90" width="140" height="176" fill="#fff3d6"/>
+        <polygon points="250,90 320,52 390,90" fill="#fbe3e3"/>
+        <rect x="236" y="266" width="168" height="16" fill="#e9d9b8"/>
+        <line x1="320" y1="52" x2="320" y2="266" stroke-dasharray="7 5" stroke-width="1.4"/>
+        <line x1="285" y1="130" x2="355" y2="130" stroke-width="1"/><line x1="285" y1="170" x2="355" y2="170" stroke-width="1"/><line x1="285" y1="210" x2="355" y2="210" stroke-width="1"/>
+        <circle cx="320" cy="252" r="5" fill="#c1272d" stroke="none"/>
+      </g>
+      <g stroke="#c1272d" stroke-width="1.4">
+        <line x1="250" y1="70" x2="250" y2="290"/><line x1="390" y1="70" x2="390" y2="290"/>
+        <line x1="230" y1="266" x2="410" y2="266"/>
+      </g>
+      <g font-size="13" fill="#8e1b20" font-weight="700">
+        <text x="398" y="180">44</text><text x="300" y="48">mái 14</text><text x="300" y="300">Ø36 — cạnh 18</text><text x="120" y="180">62</text>
+      </g>
+      <g font-size="12.5" fill="#54432e">
+        <text x="20" y="350">Ghi chú: khung tre Ø4 mm, giấy nến dán trong khung; đế gỗ dày 4 cm; trục inox Ø3 mm xuyên tâm.</text>
+        <text x="20" y="372">Khung tên A4: “ĐÈN KÉO QUÂN TRĂNG CHI LĂNG — Lớp 12A10 — Tỉ lệ 1:5 — Đơn vị cm”.</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="draw" id="tab-bang" style="display:none">
+    <svg viewBox="0 0 640 420">
+      <text x="20" y="30" font-size="17" font-weight="700" fill="#43290e">HÌNH CHIẾU BẰNG — nhìn từ trên xuống (thấy chiều quay kim đồng hồ)</text>
+      <g transform="translate(320,220)" stroke="#43290e" stroke-width="2" fill="#fff3d6">
+        <polygon points="0,-110 95,-55 95,55 0,110 -95,55 -95,-55"/>
+        <polygon points="0,-80 69,-40 69,40 0,80 -69,40 -69,-40" fill="#ffe9bd"/>
+        <circle r="62" fill="none" stroke="#c1272d" stroke-dasharray="6 5"/>
+        <g stroke="#c1272d" stroke-width="3">
+          <line x1="0" y1="0" x2="52" y2="-28"/><line x1="0" y1="0" x2="60" y2="6"/><line x1="0" y1="0" x2="30" y2="50"/><line x1="0" y1="0" x2="-22" y2="55"/><line x1="0" y1="0" x2="-56" y2="20"/><line x1="0" y1="0" x2="-52" y2="-28"/>
+        </g>
+        <circle r="5" fill="#c1272d" stroke="none"/>
+      </g>
+      <g font-size="13.5" fill="#8e1b20" font-weight="700">
+        <text x="440" y="220">khung trong Ø26</text><text x="440" y="242">12 cánh nghiêng 22°</text><text x="440" y="264">↻ cùng chiều kim đồng hồ</text>
+      </g>
+      <text x="20" y="372" font-size="12.5" fill="#54432e">Mũi tên cong ↻ vẽ đậm trên bản vẽ để giám khảo thấy ngay chiều quay đạt chuẩn.</text>
+    </svg>
+  </div>
+
+  <div class="draw" id="tab-canh" style="display:none">
+    <svg viewBox="0 0 640 420">
+      <text x="20" y="30" font-size="17" font-weight="700" fill="#43290e">HÌNH CHIẾU CẠNH + MẶT CẮT TRỤC QUAY</text>
+      <g stroke="#43290e" stroke-width="2" fill="none">
+        <rect x="150" y="90" width="120" height="176" fill="#fff3d6"/>
+        <polygon points="150,90 210,52 270,90" fill="#fbe3e3"/>
+        <rect x="140" y="266" width="140" height="16" fill="#e9d9b8"/>
+        <line x1="210" y1="40" x2="210" y2="280" stroke-dasharray="7 5" stroke-width="1.4"/>
+        <rect x="204" y="120" width="12" height="120" fill="#c1272d" stroke="none" opacity=".8"/>
+        <polygon points="150,150 270,132 270,158 150,176" fill="#ffd166" opacity=".9" stroke="none"/>
+        <circle cx="210" cy="112" r="9" fill="none" stroke-width="2.4"/>
+        <rect x="196" y="240" width="28" height="14" fill="#43290e" stroke="none"/>
+      </g>
+      <g font-size="13" fill="#8e1b20" font-weight="700">
+        <text x="290" y="150">chong chóng R13</text><text x="290" y="172">vòng bi 608</text><text x="290" y="194">trục Ø3 — cao 52</text><text x="290" y="252">3 nến tealight △ đều</text>
+      </g>
+      <text x="20" y="350" font-size="12.5" fill="#54432e">Mặt cắt thể hiện: luồng khí nóng bốc lên → đập cánh nghiêng → sinh mô-men quay đều, ổn định.</text>
+    </svg>
+  </div>
+
+  <div class="spec">
+    <div><b>62 cm</b><span>Tổng cao: đế 4 · thân 44 · mái 14</span></div>
+    <div><b>Ø36 cm</b><span>Lục giác ngoại tiếp, cạnh 18 cm</span></div>
+    <div><b>12 cánh</b><span>Chong chóng R13, nghiêng 22°</span></div>
+    <div><b>1:5</b><span>Tỉ lệ vẽ A4, đơn vị cm</span></div>
+  </div>
+
+  <div class="card" style="margin-top:18px;border-left:6px solid var(--jade)">
+    <h3>Vật liệu + ngân sách (tổ hậu cần chốt trong 1 buổi chợ)</h3>
+    <p>Tre vót Ø4 mm (2 bó) · giấy nến vàng/đỏ/chàm · giấy dó vẽ hoa văn · đế gỗ tròn · trục inox Ø3 mm + 2 vòng bi 608 · dây kẽm, keo nến chịu nhiệt · 3 nến tealight + 1 LED dự phòng · sơn acrylic, cọ. <b>Dự toán 350.000–450.000 ₫</b>, chia 33 bạn ≈ 11.000–14.000 ₫/bạn. Ưu tiên vật liệu tái sử dụng để ghi điểm bền vững.</p>
+  </div>
+</div></section>
+
+<!-- QUY TRÌNH -->
+<section class="block" id="quytrinh" style="background:var(--paper2)"><div class="wrap">
+  <div class="eyebrow">04 · Thi công không rớt điểm oan</div>
+  <h2 class="sec">7 bước làm + 5 bẫy phải tránh</h2>
+  <div class="grid2">
+    <ol class="steps">
+      <li><b>Dựng khung lục giác:</b> cắt 6 cột cao 44 cm, 2 vành lục giác cạnh 18 cm; tam giác hoá bằng 6 thanh chéo ngắn. Mối buộc kẽm siết + chấm keo nến.</li>
+      <li><b>Đế + trục:</b> đế gỗ khoan tâm, dựng trục inox thẳng đứng (dùng ê-ke kiểm tra 90°), tra vòng bi trên–dưới, quay tay phải trơn không lắc.</li>
+      <li><b>Chong chóng 12 cánh:</b> cắt bìa cứng 12 cánh giống hệt nhau (rập khuôn 1 cánh mẫu), gấp mép nghiêng 22° cùng một chiều — đây là bước quyết định chiều kim đồng hồ.</li>
+      <li><b>Khung trong kể chuyện:</b> dán 6 dải giấy nến in/vẽ 6 mặt vào lồng trụ Ø26, mép dán chồng 5 mm, cân 2 đầu để không lệch tâm.</li>
+      <li><b>Áo đèn:</b> dán giấy nến mặt ngoài từ dưới lên, vuốt phẳng, chừa khe thoát nhiệt mái 2 cm; khoảng cách giấy–nến ≥ 12 cm.</li>
+      <li><b>Cân bằng + thử lửa:</b> treo đèn, quay tay 10 vòng kiểm tra lắc; thắp 3 nến, bấm giờ 60 giây × 3 lần, chỉnh góc cánh tới khi đạt 15–21 vòng/phút.</li>
+      <li><b>Tổng duyệt di chuyển:</b> bê đèn đi bộ 20 m, xoay 4 hướng — không rơi, không méo, lửa không tạt vào giấy mới được niêm phong đi thi.</li>
+    </ol>
+    <div>
+      <div class="card" style="border-left:6px solid var(--red)">
+        <h3>5 bẫy mất điểm oan</h3>
+        <p>✕ Cánh gấp 2 chiều ngược nhau → đèn quay ngược hoặc đứng im (mất trắng 30đ vận hành).<br>✕ Trục lệch 1–2° → lắc, kêu, quay giật cục.<br>✕ Giấy dán quá kín, không khe thoát nhiệt → nến tắt giữa chừng.<br>✕ Bản vẽ thiếu 1 hình chiếu hoặc thiếu kích thước → mất điểm 40đ.<br>✕ Trang trí copy nguyên mẫu mạng → mất điểm sáng tạo.</p>
+      </div>
+      <div class="progress no-print" id="progBox">Tiến độ checklist: <span id="progTxt">0/10</span></div>
+      <div class="check" id="checklist">
+        <label><input type="checkbox" onchange="prog()"> Bản vẽ A4 đủ 3 hình chiếu + kích thước + khung tên, có chữ ký</label>
+        <label><input type="checkbox" onchange="prog()"> Khung tam giác hoá, mối kẽm + keo nến, bê 20 m không rớt chi tiết</label>
+        <label><input type="checkbox" onchange="prog()"> Trục thẳng 90°, vòng bi trơn, quay tay 10 vòng không lắc</label>
+        <label><input type="checkbox" onchange="prog()"> 12 cánh cùng chiều nghiêng 22°, rập từ 1 khuôn mẫu</label>
+        <label><input type="checkbox" onchange="prog()"> Quay cùng chiều kim đồng hồ khi nhìn từ trên xuống</label>
+        <label><input type="checkbox" onchange="prog()"> Bấm giờ 3 lần: 15–21 vòng/phút (dưới trần 30 vòng/phút)</label>
+        <label><input type="checkbox" onchange="prog()"> Giấy cách nến ≥ 12 cm, có khe thoát nhiệt 2 cm</label>
+        <label><input type="checkbox" onchange="prog()"> 6 mặt kể chuyện liền mạch, không copy mạng</label>
+        <label><input type="checkbox" onchange="prog()"> Có nến + LED dự phòng, bật lửa dài, khăn ướt chống cháy</label>
+        <label><input type="checkbox" onchange="prog()"> Tổng duyệt + quay clip dự phòng nếu sân khấu có gió</label>
+      </div>
+      <button class="btn btn-gold no-print" style="margin-top:12px" onclick="window.print()">In checklist + bản vẽ</button>
+    </div>
+  </div>
+</div></section>
+
+<!-- BÁNH -->
+<section class="block" id="banh"><div class="wrap">
+  <div class="eyebrow">05 · Bảng 2 — Bánh 100 điểm</div>
+  <h2 class="sec">Bộ bánh “Tứ Quý Trăng Rằm” — 2 kinh điển giữ điểm, 2 sáng tạo lấy điểm</h2>
+  <p class="sub">Chất lượng 50 điểm nằm ở vỏ mỏng — nhân dẻo — nướng chín đều; 30 điểm nghệ thuật nằm ở mặt bánh và mâm trưng bày; 20 điểm sáng tạo nằm ở 2 vị độc bản gắn câu chuyện Chi Lăng.</p>
+  <div class="cake-grid" style="margin-top:18px">
+    <div class="cake"><div class="top" style="background:linear-gradient(180deg,#f7d98b,#e8a93d)">🥮</div><div class="body"><span class="tag">kinh điển · giữ 50đ</span><h4>1 · Thập cẩm gà quay trứng muối</h4><p>Vỏ 70 g — nhân 130 g (200 g/bánh). Nướng 3 lần 190°C, quét trứng mỏng 2 lớp. Điểm nhấn: lạp xưởng, mứt sen, lá chanh thái sợi.</p></div></div>
+    <div class="cake"><div class="top" style="background:linear-gradient(180deg,#ffe9bd,#f2b705)">🌕</div><div class="body"><span class="tag">kinh điển · giữ 50đ</span><h4>2 · Đậu xanh sen nhuyễn trứng muối</h4><p>Nhân sên tới khi đứng chóp, dầu ăn cho 3 đợt. Mặt khuôn thỏ ngọc ôm trăng — biểu tượng dễ ăn điểm nghệ thuật với mọi giám khảo.</p></div></div>
+    <div class="cake"><div class="top" style="background:linear-gradient(180deg,#3a3f5c,#101736);color:#fff">🌑</div><div class="body"><span class="tag red">sáng tạo · +20đ</span><h4>3 · Than tre khoai môn mochi “Đêm Ải”</h4><p>Vỏ than tre đen — nhân khoai môn tím + mochi dẻo trắng như trăng non. Mặt khuôn Ải Chi Lăng thu nhỏ. Câu chuyện: “trăng lên trên ải”.</p></div></div>
+    <div class="cake"><div class="top" style="background:linear-gradient(180deg,#cfe8c0,#7fb069)">🍵</div><div class="body"><span class="tag red">sáng tạo · +20đ</span><h4>4 · Matcha dừa non hạt sen</h4><p>Vỏ matcha Nhật, nhân dừa non + hạt sen Huế, ngọt nhẹ hợp khẩu vị chấm thi (ăn nhiều mẫu không ngán). Mặt khuôn dã quỳ Gia Lai.</p></div></div>
+  </div>
+  <div class="grid2" style="margin-top:18px">
+    <div class="card"><h3>Mâm “Trăng lên trên Ải” (ăn 30đ nghệ thuật)</h3><p>4 bánh xếp bán nguyệt trên khay gỗ tròn; giữa đặt bưởi tỉa thỏ ngọc + chùm nho đen làm mây; rải cốm xanh, hoa đậu biếc tươi; backdrop giấy kraft vẽ Ải Chi Lăng + chữ thư pháp “12A10 đoàn viên”. Thẻ tên từng bánh + thẻ allergen (trứng, đậu phộng, gluten) — chi tiết nhỏ nhưng giám khảo chuyên nghiệp rất cộng điểm.</p></div>
+    <div class="card"><h3>Chuẩn chất lượng 50đ</h3><p>Vỏ: bột mì đa dụng + nước đường 10 ngày tuổi, nghỉ bột 40 phút, cán đều 3 mm. Nhân: sên đạt 75–80°C, viên tròn không nứt. Nướng: lần 1 định hình 190°C/10 phút, xịt nước — nghỉ 15 phút; lần 2–3 lên màu. Để 2 ngày xuống dầu mới đem thi — bánh ăn ngày 2 mới đạt đỉnh hương vị.</p></div>
+  </div>
+</div></section>
+
+<!-- KẾ HOẠCH -->
+<section class="block" id="kehoach" style="background:var(--paper2)"><div class="wrap">
+  <div class="eyebrow">06 · Tổ chức lớp 12A10</div>
+  <h2 class="sec">5 tổ — 4 buổi — xong trước hạn 1 ngày</h2>
+  <div class="tl">
+    <div><b>Buổi 1 · Chốt + vẽ</b><span>Tổ bản vẽ (6 bạn khéo tay + giỏi hình học) hoàn thành bản vẽ A4. Tổ khung (8 bạn) vót tre, dựng khung. Tổ bánh (8 bạn) thử nhân + đặt khuôn. Tổ mỹ thuật (6 bạn) vẽ 6 mặt giấy nến. Tổ truyền thông (5 bạn) viết lời thuyết trình + quay quá trình làm (clip dự phòng + minh chứng sáng tạo).</span></div>
+    <div><b>Buổi 2 · Lắp + nướng thử</b><span>Hoàn thiện trục — chong chóng — khung trong; nướng thử 4 vị, chấm nội bộ theo đúng thang 50-30-20, loại vị lỗi.</span></div>
+    <div><b>Buổi 3 · Hiệu chỉnh tốc độ</b><span>Bấm giờ 60 giây × 5 lần, chỉnh góc cánh tới khi ổn định 15–21 vòng/phút, khoá keo các mối chỉnh. Tổng duyệt bê đèn 20 m.</span></div>
+    <div><b>Buổi 4 · Tổng duyệt + đóng gói</b><span>Thuyết trình thử 2 phút, trả lời câu hỏi khó. Đóng thùng: đèn + bản vẽ ép plastic + bánh + thẻ tên + hộp dự phòng (nến, LED, keo, giấy nến vá).</span></div>
+  </div>
+</div></section>
+
+<!-- THUYẾT TRÌNH -->
+<section class="block" id="thuyettrinh"><div class="wrap">
+  <div class="eyebrow">07 · 2 phút trước giám khảo</div>
+  <h2 class="sec">Kịch bản nói + đáp câu hỏi khó</h2>
+  <div class="speech">
+    “Kính thưa ban giám khảo, <b>Trăng Chi Lăng</b> của 12A10 là chiếc đèn kéo quân <b>lục giác 6 mặt</b> — mỗi mặt một thước phim từ cổng trường tới Ải Chi Lăng, tới cồng chiêng Tây Nguyên. Khung trong quay bằng <b>đối lưu khí nóng</b> từ 3 nến, qua <b>chong chóng 12 cánh nghiêng 22 độ</b> và <b>vòng bi thép</b> nên quay đều <b>khoảng 0,3 vòng mỗi giây, cùng chiều kim đồng hồ</b> — đúng thể lệ. Mời thầy cô cùng ngắm trăng lên trên ải!” <b>(Thắp nến — im lặng 5 giây cho đèn chạy — cả lớp vỗ tay theo nhịp.)</b>
+  </div>
+  <div class="grid3" style="margin-top:14px">
+    <div class="card"><h3>“Sao biết dưới 0,5 vòng/giây?”</h3><p>“Dạ, nhóm em bấm giờ 60 giây được 15–21 vòng, có bảng 5 lần đo kèm theo bản vẽ. Trần thể lệ là 30 vòng/phút nên đèn em chỉ chạy khoảng 60% trần.”</p></div>
+    <div class="card"><h3>“Có copy mạng không?”</h3><p>“Dạ không. Mẫu mạng phổ biến là vuông 4 mặt; đèn em là lục giác 6 mặt kể chuyện Chi Lăng — Tây Nguyên, có clip quá trình làm + 6 bản phác thảo tay của tổ mỹ thuật.”</p></div>
+    <div class="card"><h3>“An toàn cháy nổ?”</h3><p>“Giấy cách nến tối thiểu 12 cm, khe thoát nhiệt 2 cm, đế gỗ chống bén lửa, có LED dự phòng khi gió to và khăn ướt + bình xịt đi kèm ạ.”</p></div>
+  </div>
+  <div class="cta-row no-print" style="margin-top:18px">
+    <a class="btn btn-gold" href="#banve">Về xem bản vẽ →</a>
+    <button class="btn btn-ghost" style="background:#3a2410" onclick="window.print()">In toàn bộ web làm hồ sơ</button>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <b style="color:var(--gold-soft)">12A10 · THPT Chi Lăng — Hội Trăng Rằm 2026.</b> Web idea nội bộ: concept đèn “Trăng Chi Lăng” + bộ bánh “Tứ Quý Trăng Rằm”, bám Phụ lục 2 (09-KH/ĐTN, 14/09/2026). Mood tham khảo: đèn giấy thủ công, lồng đèn thỏ — cá chép — hoa sen, palette đêm trăng Pinterest. Chúc lớp mình rước giải nhất về! 🏮
+</div></footer>
+
+<script>
+function showTab(id,btn){
+  ['dung','bang','canh'].forEach(function(k){document.getElementById('tab-'+k).style.display='none'});
+  document.getElementById('tab-'+id).style.display='block';
+  document.querySelectorAll('.tab').forEach(function(b){b.classList.remove('active')});
+  btn.classList.add('active');
+}
+function calc(){
+  var c=+document.getElementById('candles').value, a=+document.getElementById('angle').value;
+  var v=0.09*c*Math.sin(a*Math.PI/180)*1.15;
+  var perMin=Math.round(v*60);
+  var ok=v<0.5;
+  document.getElementById('estOut').innerHTML='Tốc độ dự kiến: <b>'+v.toFixed(2)+' vòng/giây</b> ('+perMin+' vòng/phút) — '+(ok?'✅ trong giới hạn, vùng an toàn 0,25–0,35 là đẹp nhất.':'⚠️ vượt trần 0,5 — giảm nến hoặc hạ góc cánh.');
+}
+function prog(){
+  var boxes=document.querySelectorAll('#checklist input');
+  var n=0;boxes.forEach(function(b){if(b.checked)n++});
+  document.getElementById('progTxt').textContent=n+'/'+boxes.length;
+}
+calc();prog();
+document.querySelectorAll('.links a').forEach(function(a){
+  a.addEventListener('click',function(){
+    document.querySelectorAll('.links a').forEach(function(x){x.classList.remove('active')});
+    a.classList.add('active');
+  });
+});
+</script>
+</body>
+</html>
